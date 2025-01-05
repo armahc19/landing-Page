@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn Rewards with Probability</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #ff7a18, #ffb347);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Description Section */
+        .description-section {
+            padding: 40px 0;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .description-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .description-section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .description-section a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff7a18;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .description-section a:hover {
+            background: #cc620f;
+        }
+
+        /* Benefits Section */
+        .benefit-section {
+            padding: 40px 0;
+            background: #fff;
+        }
+
+        .benefit-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-section .cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .benefit-section .card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 calc(33% - 20px);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .benefit-section .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Video Section */
+        .video-section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 40px 0;
+            background: #ff7a18;
+            color: white;
+        }
+
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-section form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-section form input, .form-section form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section form button {
+            width: 100%;
+            padding: 10px;
+            background: #ff7a18;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-section form button:hover {
+            background: #cc620f;
+        }
+
+        /* Call to Action */
+        .cta {
+            text-align: center;
+            padding: 20px;
+            background: #ffb347;
+            color: white;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: white;
+            color: #ff7a18;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .benefit-section .card {
+                flex: 1 1 100%;
+            }
+
+            .form-section form button {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A Fun Way to Earn Real Rewards: Coming Soon!</h1>
+        <p>Experience the thrill of probability and earn real rewards with our innovative platform.</p>
+    </header>
+    
+    <div class="description-section">
+        <h2>Introducing ProbHash</h2>
+        <p>
+            At ProbHash, we believe that earning rewards should be as fun as it is rewarding. Our platform combines the thrill of chance with the excitement of gaming, allowing users to generate random hashes and match them with the server for a chance to win tokens. These tokens can be redeemed for real-world rewards, creating a unique and engaging experience.
+            
+            Join our waitlist today to be one of the first to try it out, earn tokens, and participate in a truly exciting new way to earn!</p>
+        <a href="#waitlist">Join Now</a>
+        <a href="#more-info">Learn More</a>
+    </div>
+    
+    <div class="benefit-section">
+        <div class="cards">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/7d/e5/d4/7de5d4839e8d09d7c465826573c11378.jpg" alt="phone-money">
+            </div>
+            <div class="card">
+                <img src="https://i.pinimg.com/474x/5f/6e/8c/5f6e8c511d0abf5f68a61dfe5cf66449.jpg" alt="mining">
+            </div>
+        </div>
+    </div>
+
+    <div class="benefit-section">
+        <h2>Why Join Us?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Be Part of a Revolutionary Movement</h3>
+                <p>At ProbHash, you're not just having fun—you're contributing to something groundbreaking.
+                     By playing and earning tokens, you're actively participating in solving a mathematical computational
+                      problem to find the probability or chance of a match within a given range. 
+                      This is just the beginning of a revolutionary platform, and your involvement helps shape its future. 
+                    Join us as we create something bigger and better, together!</p>
+            </div>
+            <div class="card">
+                <h3>Earn Tokens</h3>
+                <p>With every game you play on [Project Name], you have the chance to earn tokens.
+                     Simply participate in our exciting hash-matching challenges, and if you win, 
+                     you’ll be rewarded with tokens that can be redeemed for real-world rewards 
+                    like cash. It’s fun, easy, and the more you play, the more you earn!</p>
+            </div>
+            <div class="card">
+                <h3>Real Rewards, Real Value</h3>
+                <p>Your tokens aren't just for fun—they hold real-world value! Once you've earned enough,
+                     you can redeem them for cash or exclusive perks. 
+                     This means your time and effort spent playing directly translates to tangible rewards, 
+                    making every moment you spend on [Project Name] more worthwhile.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Engaging Experience</h3>
+                <p>[Project Name] isn’t just about earning tokens—it’s about enjoying every moment of it! With each challenge,
+                     you'll experience excitement, anticipation, and the thrill of the game as you test your luck and skill.
+                      The more you play, the more engaging and rewarding it becomes. Whether you're striving for that perfect
+                       match or competing for the top rewards,
+                     the experience is designed to keep you coming back for more.</p>
+            </div>
+            <div class="card">
+                <h3> Engage with a Growing Community</h3>
+                <p>When you join [Project Name], you're not just playing a game—you're becoming part of a vibrant community.
+                    Connect with like-minded users, share experiences, and stay updated on new features and
+                     rewards through our active Telegram group. Together, we’ll grow, learn, and build a fun, 
+                     rewarding experience.</p>
+            </div>
+        </div>
+    </div>
+    <div class="video-section">
+        <h2>How It Works</h2>
+        <p>
+            A simple step-by-step breakdown of the process.
+            <br>
+
+            <strong>Sign Up:</strong> Create your account.
+            <br>
+            <strong>Tokens:</strong>  Purchase tokens to generate hashes.
+            <br>
+            <strong>Generate Hashes:</strong> Automatically generate hashes to match the server’s.
+            <br>
+            <strong>Earn Tokens:</strong> Win tokens and redeem them for cash or rewards.
+            
+        </p>
+    </div>
+    <div class="benefit-section" id="more-info">
+        <h2>More Detailed Info</h2>
+        <div class="cards">
+            <div class="card">
+               <p>
+                Welcome to ProbHash—a groundbreaking platform that blends gaming, rewards, and mathematics in a way you’ve never seen before. In this video, we’ll take you through everything you need to know about this exciting project that lets you earn tokens simply by solving a mathematical puzzle. You’ll learn about the core concept, how it works, the exciting user experience, and why you should be part of this revolutionary journey from the very beginning.
+
+                At the heart of ProbHash is the hash-matching game. But what exactly does that mean? Well, every user starts by generating a random hash using SHA-256, a secure algorithm known for its randomness and unpredictability. The server generates its own hash, and then the real challenge begins.
+                
+                Your goal? Match the hash you’ve generated with the server’s hash. Each time you generate a hash, you’re calculating the probability of it matching the server’s. This is where math comes into play. The more hashes you generate, the more chances you have to hit a match. But don’t worry—this isn’t just about luck.
+                
+                The platform is designed to give you a deeper, more engaging experience. As you generate and match hashes, you’re actually contributing to solving a computational problem: finding the probability or chance of a match within a given range of possibilities. It’s more than just a game—it’s an interactive way to understand and apply probability and hashing in real time.
+                
+                Getting started on ProbHash is simple. Sign up, and you’ll immediately be able to buy tokens. With these tokens, you’ll start generating hashes, testing your skills, and diving into the game. It’s a straightforward experience with a smooth interface designed for anyone to enjoy, whether you're new to coding or a seasoned gamer.
+                
+                Each token you purchase gives you access to generate a set of hashes. For example, buying 10 tokens allows you to generate 100 hashes, each offering a new chance to win. The more tokens you use, the more opportunities you get to match the hashes and win tokens!
+                
+                And here's the best part—every time you generate a match, you earn tokens. These tokens don’t just sit in your account—they hold real-world value. You can redeem them for real cash, or choose from a range of exclusive rewards. Your time spent on the platform directly translates into rewards, creating an exciting and meaningful experience.
+                
+                Once you’ve accumulated enough tokens, you can redeem them for actual cash. The more you play, the more you earn, making every decision to participate count toward real-world rewards.
+                
+                ProbHash isn’t just a platform—it’s a fully immersive experience. Every match is thrilling, and the gameplay is designed to keep you engaged for hours. As you play, you’re not only testing your luck but also learning about probability and how it applies to the real world.
+                
+                At ProbHash, you're not just having fun—you're contributing to something groundbreaking. By playing and earning tokens, you're actively participating in solving a mathematical computational problem to find the probability or chance of a match within a given range. This is just the beginning of a revolutionary platform, and your involvement helps shape its future. Join us as we create something bigger and better, together!
+                
+                As an early member of ProbHash, you get exclusive benefits! Be the first to explore our platform, earn tokens, and access special rewards before anyone else. Early adopters will also enjoy unique bonuses, VIP status, and priority access to new features as we continue to grow and evolve. Don’t miss out—your early participation will set you apart and reward you in ways others won’t experience!
+                
+                With every game you play on ProbHash, you have the chance to earn tokens. Simply participate in our exciting hash-matching challenges, and if you win, you’ll be rewarded with tokens that can be redeemed for real-world rewards like cash. It’s fun, easy, and the more you play, the more you earn!
+                
+                The best part? You don’t have to manually generate hashes! Everything is automated with the click of a button. Once you buy your tokens and start generating hashes, the process happens automatically. You can relax, go to bed, or get on with your day while the system works in the background, generating hashes and giving you more chances to win. This means you can make money without having to sit in front of the screen all day—let the platform do the work for you while you enjoy the rewards!
+                
+                Your tokens aren’t just for fun—they hold real-world value! Once you've earned enough, you can redeem them for cash or exclusive perks. This means your time and effort spent playing directly translates to tangible rewards, making every moment you spend on ProbHash more worthwhile.
+                
+                Getting started on ProbHash is simple! No complex setups or steep learning curves—just sign up, buy some tokens, and you're ready to play. Whether you're a casual gamer or someone looking to earn rewards, our platform is designed for everyone to jump in and start having fun right away.
+                
+                When you join ProbHash, you're not just playing a game—you're becoming part of a vibrant community. Connect with like-minded users, share experiences, and stay updated on new features and rewards through our active Telegram group. Together, we’ll grow, learn, and build a fun, rewarding experience.
+                
+                Join today and start earning tokens in a fun, engaging way! Be part of something new, and let your participation help shape the future of this exciting platform. ProbHash is not just a game—it’s a revolution in how we play, earn, and engage with technology.
+               </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section" id="waitlist">
+        <h2>Join the Waitlist</h2>
+        <form action="https://formspree.io/f/meoopzzq" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+
+            <label for="interest">Level of Interest</label>
+            <select id="interest" name="interest" required>
+                <option value="">Select your level of interest</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+
+
+            https://armahc19.github.io/LandingPage/
+
+            <button type="submit">Join Waitlist</button>
+        </form>
+    </div>
+
+    <div class="cta">
+        <p>Connect with our community!</p>
+        <a href="https://t.me/yourtelegramgroup" target="_blank">Join Telegram</a>
+    </div>
+</body>
+</html>
